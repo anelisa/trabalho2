@@ -37,10 +37,10 @@
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Seletor de cor</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="./contador.html" class="nav-link">Contador</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="./cronometro.html" class="nav-link">Cronometro</a>
           </li>
           <li class="nav-item">
@@ -57,42 +57,27 @@
       <main class="flex-grow-1 mt-3">
         <div class="p-3 mb-2 bg-info text-white d-flex flex-column text-center mt-1 jumbotron">
           <div class="container">
-            <h1>Contador</h1>
-            <p>Utilize os botoes abaixo para realizar uma contagem</p>
+            <h1>To-do-List</h1>
+            <p>Adicione ou remova itens em sua lista de tarefas</p>
           </div>
         </div>
-
         <div class="container">
           <div class="row">
-            <div class="col">
-              <button id="buttonDash" type="button" class="btn btn-danger btn-block">
-                <i class="bi bi-dash-circle-fill"></i>
-                1
+            <div class="col my-3">
+              <button type="button" class="btn btn-success btn-block">
+                <i class="bi bi-plus-circle"></i>
+                Adicionar
               </button>
-
-            </div>
-            <div class="col">
-              <button id="buttonPlus" type="button" class="btn btn-success btn-block">
-                <i class="bi bi-plus-circle-fill"></i>
-                1
-              </button>
-
             </div>
           </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col text-center mt-5 display-1 font-weight-bold">
-              <output>
-                0
-              </output>
-            </div>
+          <div class="container" id="tarefas">
+            
           </div>
         </div>
       </main>
     </div>
-    
-
     <footer class="bg-light text-black-50 text-center">
-      Copyright ₢ 2021 Anelisa Silva
+      Copyright &copy; 2021 Anelisa Silva
     </footer>
 
 
@@ -103,7 +88,7 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/contador.js"></script>
+  <script src="js/toDoList.js"></script>
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
