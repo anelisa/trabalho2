@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cadastro.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,13 +35,13 @@
       <a href="#" class="navbar-brand">Logo</a>
       <div id="navbar-principal" class="collapse navbar-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="./index.html" class="nav-link">Seletor de cor</a>
           </li>
           <li class="nav-item">
             <a href="./contador.html" class="nav-link">Contador</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="./cronometro.html" class="nav-link">Cronometro</a>
           </li>
           <li class="nav-item">
@@ -56,45 +57,27 @@
       </div>
     </nav>
 
-    <div class="d-flex flex-column flex-md-row flex-grow-1">
-      <main class="flex-grow-1 mt-3">
-        <div class="p-3 mb-2 bg-info text-white d-flex flex-column text-center mt-1 jumbotron">
-          <div class="container">
-            <h1>Seletor de Cor</h1>
-            <p>Informe o nome ou codigo da cor no campo abaixo para obter um preview</p>
-          </div>
-        </div>
-  
-        <div class="d-flex justify-content-center">
-          <form class="container">
-            <div class="row">
-              <div class="col-sm-6 mb-2">
-                <input type="text" class="form-control text-center" placeholder="Nome ou codigo da cor">
-              </div>
-              <div class="col-sm-6">
-                <button id="btnSubmit" type="submit" class="btn btn-primary form-control">
-                  <i class="bi bi-eye-fill"></i>
-                  Visualizar
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </main>
-    </div>
-  
+<main class="container flex flex--coluna flex--centro">
+  <div class="cadastro-cabecalho">
+    <img src="./img/doguito.svg" alt="Logo Doguito" class=""cadastro-cabecalho_logo">
+    <h1 class=""cadastro-cabecalho_titulo">PetShop</h1>
+  </div>
+</main>
+    
+
     <footer class="bg-light text-black-50 text-center">
       Copyright &copy; 2021 Anelisa Silva
     </footer>
+
+
   </div>
-  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="/node_modules/popper.js/dist/popper.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/seletor-cor.js"></script>
+  <script src="js/cronometro.js"></script>
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
