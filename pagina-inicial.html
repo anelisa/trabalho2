@@ -31,13 +31,13 @@
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-principal" aria-controls="navbar-principal" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="./pagina-inicial.html" class="navbar-brand">Logo</a>
+      <a href="#" class="navbar-brand">Logo</a>
       <div id="navbar-principal" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Seletor de cor</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="./contador.html" class="nav-link">Contador</a>
           </li>
           <li class="nav-item">
@@ -46,7 +46,7 @@
           <li class="nav-item">
             <a href="./toDoList.html" class="nav-link fst-italic">To-do-list</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="./contagem-regressiva.html" class="nav-link">Contagem regressiva</a>
           </li>
         </ul>
@@ -57,40 +57,30 @@
       <main class="flex-grow-1 mt-3">
         <div class="p-3 mb-2 bg-info text-white d-flex flex-column text-center mt-1 jumbotron">
           <div class="container">
-            <h1>Contagem Regressiva</h1>
-            <p>Esta aplicação recupera de um webservice a data de um evento, e então exibe uma contagem regressiva</p>
+            <h1>Pagina Inicial</h1>
           </div>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="dias" class="text-white">0</output>
+        <div class="text-center container">
+            <h2>Trabalho final da disciplina de fundamentos do git</h2>
+            <p>Este trabalho tem por objetivo colocar em pratica a utilização dos comandos do git de forma pratica.</p>
+            <p>Para isto foi proposto uma estrutura de trabalho em que será contido:</p>
+            <ul>
+                <li>Iremos criar 4 branchs, duas para cada participante do grupo</li>
+                <li>Iremos testar comandos para atualizar nossa branchs, realizar merges, criar PRs, criar issues</li>
+                <li>Será feita também uma apresentação final e pratica demonstrando o que foi realizado neste projeto.</li>
+            </ul>
+            <p>Trata-se de um projeto simples, porém que irá conter muita pratica em todo da utilização do git em cenario real.</p>
+
+            <h3>Menu de navegação extra</h3>
+            <div class="list-group">
+                <a href="./index.html" class="list-group-item list-group-item-action active">Seletor de cor</a>
+                <a href="./contador.html" class="list-group-item list-group-item-action">Contador</a>
+                <a href="./cronometro.html" class="list-group-item list-group-item-action">Cronometro</a>
+                <a href="./toDoList.html" class="list-group-item list-group-item-action">To-do-list</a>
+                <a href="./contagem-regressiva.html" class="list-group-item list-group-item-action">Contagem regressiva</a> 
             </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="horas" class="text-white">0</output>
-            </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="minutos" class="text-white">0</output>
-            </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="segundos" class="text-white">0</output>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col border py-3 border-info">
-              Dias
-            </div>
-            <div class="col border py-3 border-info">
-              Horas
-            </div>
-            <div class="col border py-3 border-info">
-              Minutos
-            </div>
-            <div class="col border py-3 border-info">
-              Segundos
-            </div>
-          </div>
+
         </div>
       </main>
     </div>
@@ -108,7 +98,6 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/contagem-regressiva.js"></script>
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
