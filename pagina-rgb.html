@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -65,36 +66,39 @@
           </div>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="dias" class="text-white">0</output>
-            </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="horas" class="text-white">0</output>
-            </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="minutos" class="text-white">0</output>
-            </div>
-            <div class="col bg-success border-light m-1 text-center py-3">
-              <output id="segundos" class="text-white">0</output>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col border py-3 border-info">
-              Dias
-            </div>
-            <div class="col border py-3 border-info">
-              Horas
-            </div>
-            <div class="col border py-3 border-info">
-              Minutos
-            </div>
-            <div class="col border py-3 border-info">
-              Segundos
-            </div>
-          </div>
+        <div class="centerRanges">
+            <form class="range_color">
+                <p>
+                    <label for="vol">Color red (between 0 and 255):
+                        <input id="rangeRed" type="range" min="0", max="255" value ="0" onchange="teste()">
+                        <input id="disabledRed" type="text" disabled="" readonly placeholder="0">
+                    </label>
+                </p>
+                
+                <p>
+                    <label for="vol">Color green (between 0 and 255):
+                        <input id="rangeGreen" type="range" min="0" max="255" value ="0" onchange="teste()">
+                        <input id="disabledGreen" type="text" disabled="" readonly placeholder="0">
+                    </label>
+                </p>
+                
+                <p>
+                    <label for="vol">Color blue (between 0 and 255):
+                        <input id="rangeBlue" type="range" min="0" max="255" value ="0" onchange="teste()">
+                        <input id="disabledBlue" type="text" disabled="" readonly placeholder="0">
+                    </label>
+    
+                </p>   
+            </form>
         </div>
+    
+        <div class="d-flex justify-content-center">
+            <div id="container" class="container2">
+                <div class="testeRGB">
+                </div>
+            </div>
+        </div>
+
       </main>
     </div>
     
@@ -111,7 +115,7 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/contagem-regressiva.js"></script>
+  <script src="js/rgb.js"></script>
   
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

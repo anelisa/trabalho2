@@ -1,0 +1,23 @@
+.range_color {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .centerTitle {
+    text-align: center;
+  }
+  
+  .centerRanges {
+    border:solid 1px;
+    border-radius:0px 20px 0px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .container2 {
+    margin-top: 10px;
+    border: solid 1px;
+    width:100px;
+    height:100px;
+    margin-left: 300px;
+  }
