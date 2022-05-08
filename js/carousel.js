@@ -10,4 +10,4 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
 
 }
 
-setInterval(galleryspin, 1000,'-');
+setInterval(galleryspin, 3000,'-');
